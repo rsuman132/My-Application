@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/walkThrowFragment"
+        android:name="com.example.myapp.view.fragment.WalkThrowFragment"
+        android:label="fragment_walk_throw"
+        tools:layout="@layout/fragment_walk_throw" >
+        <action
+            android:id="@+id/action_walkThrowFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/walkThrowFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapp.view.fragment.DecisionFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_decision" >
+        <action
+            android:id="@+id/action_homeFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.myapp.view.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_chooseLanguageFragment"
+            app:destination="@id/chooseLanguageFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_out"
+            app:popExitAnim="@anim/fade_in"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_walkThrowFragment"
+            app:destination="@id/walkThrowFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseLanguageFragment"
+        android:name="com.example.myapp.view.fragment.ChooseLanguageFragment"
+        android:label="fragment_choose_language"
+        tools:layout="@layout/fragment_choose_language" >
+        <action
+            android:id="@+id/action_chooseLanguageFragment_to_walkThrowFragment"
+            app:destination="@id/walkThrowFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/chooseLanguageFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.myapp.view.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_registerFragment_to_otpFragment"
+            app:destination="@id/otpFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.myapp.view.fragment.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/accountFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_accountFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/accountFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.example.myapp.view.fragment.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/otpFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+    </fragment>
+</navigation>

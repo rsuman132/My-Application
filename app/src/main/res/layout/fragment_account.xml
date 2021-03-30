@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.AccountFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_nav"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_background"
+                android:padding="@dimen/_16ssp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/_10ssp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_10ssp">
+
+                        <TextView
+                            android:id="@+id/acc_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_16ssp"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="@dimen/_8ssp"/>
+
+                        <TextView
+                            android:id="@+id/acc_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/acc_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="@dimen/_8ssp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/follow_background"
+                            android:padding="@dimen/_5ssp"
+                            android:gravity="center">
+
+
+                            <LinearLayout
+                                android:id="@+id/acc_post"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/post"
+                                    android:textColor="@color/green"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_8ssp"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="@dimen/_5ssp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/totalpost"
+                                    android:textColor="@color/green"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_10ssp"
+                                    android:gravity="center"/>
+
+
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:id="@+id/acc_followers"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/followers"
+                                    android:textColor="@color/green"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_8ssp"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="@dimen/_5ssp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/totalpost"
+                                    android:textColor="@color/green"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_10ssp"
+                                    android:gravity="center"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/acc_following"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/following"
+                                    android:textColor="@color/green"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_8ssp"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="@dimen/_5ssp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/totalpost"
+                                    android:textColor="@color/green"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_10ssp"
+                                    android:gravity="center"/>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/_5ssp">
+
+                        <include layout="@layout/circular_image"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/_10ssp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/acc_chat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:textColor="@color/white"
+                        android:text="@string/chat"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:layout_marginEnd="@dimen/_5ssp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/acc_follow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/follow_background"
+                        android:textColor="@color/green"
+                        android:text="@string/follow"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/_5ssp"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_8ssp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/acc_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/green"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/green"
+        android:theme="@style/nav_text_look"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

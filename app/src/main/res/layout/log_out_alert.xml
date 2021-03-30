@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/_10ssp"
+        android:background="@drawable/follow_background">
+
+        <ImageView
+            android:id="@+id/alert_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_exit"
+            android:layout_marginBottom="@dimen/_5ssp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout_dialog"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_5ssp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/yes_alert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/follow_background"
+                android:text="@string/yes_logout"
+                android:textAllCaps="false"
+                android:textColor="@color/green"
+                android:layout_marginRight="@dimen/_5ssp"
+                android:layout_marginEnd="@dimen/_5ssp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_yes"
+                android:paddingHorizontal="@dimen/_10ssp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/no_alert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/follow_background"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/green"
+                android:layout_marginLeft="@dimen/_5ssp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_no"
+                android:paddingHorizontal="@dimen/_10ssp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

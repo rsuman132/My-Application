@@ -1,0 +1,4 @@
+include ':otpview'
+include ':countrycodepicker'
+include ':app'
+rootProject.name = "MyApp"

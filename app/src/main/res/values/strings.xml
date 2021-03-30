@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="powered_by">Powered by BerarkRays</string>
+    <string name="skip">Skip</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="keep_distance">Keep distance</string>
+    <string name="corona_virus">Kill virus</string>
+    <string name="hand_wash">Hand wash</string>
+    <string name="sanitize">Keep places clean</string>
+    <string name="obey_rules">Follow safety measures</string>
+    <string name="keep_distance_para">Social distancing, also called “physical distancing,” means keeping a safe space between yourself and other people who are not from your household.</string>
+    <string name="corona_virus_para">“This pandemic has magnified every existing inequality in our society – like systemic racism, gender inequality, and poverty,”.</string>
+    <string name="hand_wash_para">Clean handed people are clean. So be clean, wash your hands.</string>
+    <string name="sanitize_para">To continue looking after you, we have equipped ourselves with the best sanitizing system* on the market.</string>
+    <string name="obey_rules_para">We want YOU to do the right thing.</string>
+    <string name="select_language">Select Language</string>
+    <string name="cancel">Cancel</string>
+    <string name="english" translatable="false">English</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="or">OR</string>
+    <string name="need_help">Need some help?</string>
+    <string name="getting_started">Getting started</string>
+    <string name="create_account">Create account to continue!</string>
+    <string name="lets_go_get_something">Let\'s get something</string>
+    <string name="good_to_see_you">Good to see you back</string>
+    <string name="phone_number">Phone number</string>
+    <string name="forget_your_password">Forget your password?</string>
+    <string name="password">Password</string>
+    <string name="reminder_me">Reminder me next time</string>
+    <string name="dont_have_account">Don\'t have account?</string>
+    <string name="fullname">Full Name</string>
+    <string name="boy">Boy</string>
+    <string name="girl">Girl</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="search">Search</string>
+    <string name="no_result">Result not found</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="select">Select</string>
+    <string name="chat">Chat</string>
+    <string name="follow">Follow</string>
+    <string name="post">Post</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="totalpost" translatable="false">00</string>
+    <string name="delete">Delete</string>
+    <string name="open" translatable="false">Open</string>
+    <string name="close" translatable="false">Close</string>
+    <string name="edit">Edit</string>
+    <string name="home">Home</string>
+    <string name="setting">Settings</string>
+    <string name="facebook_app_id" translatable="false">141758061105455</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb141758061105455</string>
+    <string name="google_register" translatable="false">Google</string>
+    <string name="fb_register">Facebook</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="logout_dialog">Are you sure want to logout now?</string>
+    <string name="yes_logout">Yes, logout</string>
+    <string name="register_to_continue">Register to continue</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="loading">Loading</string>
+    <string name="phone_verification">Phone verification</string>
+    <string name="register_long_text">We need to register your phone number before getting started!</string>
+    <string name="edit_phone_number">Edit phone number?</string>
+    <string name="send_again">Send again</string>
+    <string name="otp">otp here</string>
+    <string name="_00_00" translatable="false">00:00</string>
+    <string name="hello">Hello,</string>
+    <string name="blankFullName">Please enter your name</string>
+    <string name="blankPhonenumber">Please enter your phone number</string>
+    <string name="validPhonenumber">Please enter valid phonenumber</string>
+    <string name="loading_2">Loading...</string>
+    <string name="emptyOtp">Please enter the correct otp</string>
+    <string name="process">Otp generation is going on, Don\'t go back to previous page</string>
+    <string name="ok">Ok</string>
+    <string name="just_do_it">Just do it</string>
+    <string name="resend_otp">Please wait your resend OTP request being processed</string>
+</resources>

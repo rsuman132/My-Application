@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragment.WalkThrowFragment"
+    android:padding="@dimen/_10ssp">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager_walk_through"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:padding="@dimen/_10ssp">
+
+        <LinearLayout
+            android:id="@+id/walk_through_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:id="@+id/next_walk_through"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_right_arrow"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1">
+
+        <TextView
+            android:id="@+id/skip_walk_through"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:text="@string/skip"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:drawablePadding="@dimen/_5ssp"
+            android:fontFamily="@font/convergence"
+            android:padding="@dimen/_5ssp"
+            app:drawableRightCompat="@drawable/ic_skip" />
+    </RelativeLayout>
+    
+</LinearLayout>

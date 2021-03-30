@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/other_child_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/_10ssp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sign_in_google"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_google"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="@dimen/_10ssp"
+            android:drawablePadding="@dimen/_5ssp"
+            android:text="@string/google_register"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/_5ssp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sign_in_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="@dimen/_10ssp"
+            android:drawablePadding="@dimen/_5ssp"
+            android:text="@string/fb_register"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_5ssp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_parent_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragment.RegisterFragment">
+
+    <include layout="@layout/forget_password_sign_in"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/registerCL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/registerChildLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/signin_register_background"
+            android:padding="@dimen/_18ssp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <include layout="@layout/center_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20ssp">
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/registerScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:paddingBottom="?attr/actionBarSize">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sign_in_head"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/getting_started"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_18ssp"
+                            android:fontFamily="@font/convergence"
+                            android:layout_marginBottom="@dimen/_10ssp"/>
+
+                        <TextView
+                            android:id="@+id/sign_in_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lets_go_get_something"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/convergence"
+                            android:layout_marginBottom="@dimen/_10ssp"/>
+
+                        <include layout="@layout/other_sign_option"/>
+
+                        <include layout="@layout/choose_between_layout"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/register_fName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_background"
+                            android:text="@string/phone_number"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="@dimen/_16ssp"/>
+
+                        <include
+                            layout="@layout/phonenumber_et"/>
+
+                        <include
+                            layout="@layout/sign_in_button"/>
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

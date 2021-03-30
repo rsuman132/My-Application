@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_marginBottom="@dimen/_20ssp"
+    android:background="@color/green"
+    android:padding="@dimen/_2ssp">
+
+    <com.hbb20.CountryCodePicker
+            android:id="@+id/sign_in_ccp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:ccp_defaultNameCode="IN"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginRight="@dimen/_5ssp"
+            android:layout_marginEnd="@dimen/_5ssp"
+            app:ccp_textSize="@dimen/_10ssp"
+            android:gravity="center"
+            app:ccp_arrowColor="@color/white"
+            app:ccp_contentColor="@color/white"
+            app:ccpDialog_cornerRadius="@dimen/_5ssp"
+            app:ccpDialog_showCloseIcon="true"
+            app:ccpDialog_keyboardAutoPopup="false"
+            app:ccpDialog_textColor="@color/green" />
+
+    <EditText
+            android:id="@+id/sign_in_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="@dimen/_5ssp"
+            android:hint="@string/phone_number"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edit_text_background"
+            android:textSize="@dimen/_12ssp"
+            android:inputType="phone"
+            android:padding="@dimen/_12ssp"
+            android:layout_marginLeft="@dimen/_5ssp"
+            android:layout_marginStart="@dimen/_5ssp"
+            android:drawableStart="@drawable/ic_phone"
+            android:textColor="@color/white"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"/>
+    </LinearLayout>
